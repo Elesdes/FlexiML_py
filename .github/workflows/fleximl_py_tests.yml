@@ -16,9 +16,9 @@ jobs:
           python-version: 3.11
       - name: Install initial requirements
         run: pip install "maturin>=1.4,<=2.0" pytest==8.3.2
-      - name: Build and Install FlexiML
-        run: |
-          maturin build
-          pip install target/wheels/*.whl
+      # - name: Build and Install FlexiML
+      #   run: |
+      #     maturin build
+      #     pip install target/wheels/*.whl
       - name: Run Python Tests
         run: pytest
